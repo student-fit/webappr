@@ -1,0 +1,122 @@
+{
+    "hello": "Hello",
+    "welcome_message": "Welcome to our website!",
+    "about_us": "About Us",
+    "contact_us": "Contact Us",
+    "home": "Home",
+    "taxi": "Taxi",
+    "transfers": "Transfers",
+    "tours": "Tours",
+    "accommodation": "Accommodation",
+    "language": "Language",
+    "card1title": "Transfers",
+    "card1info": "Transfers to/from Dubrovnik, Split, Mostar, Sarajevo, Zadar, or any location of your choice.",
+    "card2title": "Taxi",
+    "card2info": "Reliable local taxi service ensuring punctuality, getting you to your destination without any hassle.",
+    "card3title": "Tours",
+    "card3info": "Tour organization offers thorough travel planning and logistical assistance for a seamless sightseeing experience",
+    "card4title": "Accommodation",
+    "card4info": "Our group lodging options offer ample, cozy, and fully-equipped rooms designed to cater to the requirements of groups.",
+    "vehicles1": "Mini Car",
+    "vehicles1info": "Up to 3 passengers",
+    "vehicles2": "Car",
+    "vehicles2info": "Up to 4 passengers",
+    "vehicles3": "Van",
+    "vehicles3info": "Up to 8 passengers",
+    "vehicles4": "Bus",
+    "vehicles4info": "Up to 50 passengers",
+    "vehlicetitle": "Vehicles",
+    "vehliceinfo": "Count on us for secure and dependable transportation, whether it's a swift journey or a relaxing transfer you require.",
+    
+    
+    "dubrovnikinfo": "Most popular trips",
+    "dubrovnikTitle": "Dubrovnik",
+    "dubrovnikDescription": "Embark on a journey through the enchanting allure of Dubrovnik with our expertly crafted guided tour. Step back in time as history unfolds before your eyes amidst the timeless embrace of ancient city walls and the echo of footsteps on cobblestone streets. Delve into the tapestry of cultural richness that adorns this UNESCO World Heritage Site, where every corner whispers tales of a bygone era. Be swept away by the majestic charm of the Old Town, where centuries-old architecture stands as a testament to resilience and grandeur. Stroll along the vibrant Stradun, where the pulse of Dubrovnik's heart beats in rhythm with the bustling energy of its inhabitants. Stand in awe before the towering city walls, guardians of a legacy that has endured the passage of time. As you traverse this landscape of wonder, let your senses be captivated by the panoramic vistas of the Adriatic Sea, a shimmering expanse that has borne witness to the city's triumphs and tribulations. Gain profound insights into Dubrovnik's storied past and dynamic culture, each revelation a brushstroke painting a vivid portrait of its enduring spirit.Join us on this voyage of discovery, where every step leads to a deeper appreciation of Dubrovnik's timeless beauty and boundless charm. Dare to immerse yourself in its allure, and let the magic of this ancient city ignite your sense of wonder and adventure.",
+    "mostarTitle": "Mostar",
+    "mostarDescription": "Nestled in the picturesque valley of the Neretva River, Mostar is a city that embodies the rich cultural heritage and stunning natural beauty of Bosnia and Herzegovina. Renowned for its iconic bridge, diverse architecture, and vibrant atmosphere, Mostar offers a captivating blend of history, tradition, and contemporary charm, making it an ideal destination for travelers seeking an unforgettable experience. Historical Significance: At the heart of Mostar lies the Old Bridge (Stari Most), an architectural marvel dating back to the 16th century. This elegant stone bridge, a UNESCO World Heritage site, symbolizes the city's resilience and unity. Destroyed during the Bosnian War in the 1990s, it was painstakingly reconstructed to its former glory, serving as a poignant reminder of Mostar's turbulent past and its enduring spirit. Old Town Charm: Wander through the cobbled streets of Mostar's Old Town, where Ottoman and Mediterranean influences converge in a tapestry of colorful buildings, bustling bazaars, and charming cafes. Discover historic landmarks like the Koski Mehmed Pasha Mosque, with its towering minaret offering panoramic views of the city, and the atmospheric Kujundžiluk street, lined with artisan shops selling traditional crafts and souvenirs.",
+    "taxiLocation": "Check our taxi locations",
+
+    "----------------------------CIJENE TAXIJA------------------------":"",
+    "Dubrovnik": "Dubrovnik",
+    "DubrovnikTaxiCijena": "One direction: 140 EUR",
+
+    "Medjugorje": "Medjugorje",
+    "MedjugorjeTaxiCijena":"One direction: 4 EUR ",
+
+    "VodopadKravica": "Vodopad Kravica",
+    "VodopadKravicaTaxiCijena":"One direction: 40 EUR ",
+
+    "Mostar": "Mostar",
+    "MostarTaxiCijena":"One direction: 50 EUR ",
+
+    "Sarajevo": "Sarajevo",
+    "SarajevoTaxiCijena":"One direction: 140 EUR ",
+
+    "Zadar": "Zadar",
+    "ZadarTaxiCijena":"One direction: 240 EUR ",
+
+    "Zagreb": "Zagreb",
+    "ZagrebTaxiCijena":"One direction: 500 EUR ",
+
+    "Blagaj": "Blagaj",
+    "BlagajTaxiCijena":"One direction: 40 EUR ",
+
+    "Tihaljina": "Tihaljina",
+    "TihaljinaTaxiCijena":"One direction: 40 EUR ",
+
+    "Split": "Split",
+    "SplitTaxiCijena":"One direction: 140 EUR ",
+
+    "Pocitelj": "Pocitelj",
+    "PociteljTaxiCijena":"One direction: 40 EUR ",
+
+    "Neum": "Neum",
+    "NeumTaxiCijena":"One direction: 100 EUR ",
+
+    "CrnaGora": "Montenegro",
+    "CrnaGoraCijena":"Call for price +387 ",
+
+
+    "transfersLocation": "Check our transfers locations",
+
+    "----------------------------CIJENE TRANSFERA/IZLETA------------------------":"",
+    "DubrovnikTransfer": "Dubrovnik",
+    "DubrovnikTransferCijena": "Call +387 63 878 491 for more information and price.",
+
+    "MedjugorjeTransfer": "Medjugorje",
+    "MedjugorjeTransferCijena":"Call +387 63 878 491 for more information and price.",
+
+    "VodopadKravicaTransfer": "Vodopad Kravica",
+    "VodopadKravicaTransferCijena":"Call +387 63 878 491 for more detailed information and price.",
+
+    "MostarTransfer": "Mostar",
+    "MostarTransferCijena":"Call +387 63 878 491 for more detailed information and price.",
+
+    "SarajevoTransfer": "Sarajevo",
+    "SarajevoTransferCijena":"Call +387 63 878 491 for more detailed information and price.",
+
+    "ZadarTransfer": "Zadar",
+    "ZadarTransferCijena":"Call +387 63 878 491 for more detailed information and price.",
+
+    "ZagrebTransfer": "Zagreb",
+    "ZagrebTransferCijena":"Call +387 63 878 491 for more detailed information and price.",
+
+    "BlagajTransfer": "Blagaj",
+    "BlagajTransferCijena":"Call +387 63 878 491 for more detailed information and price.",
+
+    "TihaljinaTransfer": "Tihaljina",
+    "TihaljinaTransferCijena":"Call +387 63 878 491 for more detailed information and price.",
+
+    "SplitTransfer": "Split",
+    "SplitTransferCijena":"Call +387 63 878 491 for more detailed information and price.",
+
+    "PociteljTransfer": "Pocitelj",
+    "PociteljTransferCijena":"Call +387 63 878 491 for more detailed information and price.",
+
+    "NeumTransfer": "Neum",
+    "NeumTransferCijena":"Call +387 63 878 491 for more detailed information and price."
+
+    
+
+  }
+  

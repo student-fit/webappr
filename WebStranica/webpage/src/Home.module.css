@@ -1,0 +1,111 @@
+.container {
+  position: relative;
+  height: 100vh;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 0;
+  /* Postavite font na 0 na početku kako bi se tekst postepeno pojavio */
+  overflow: hidden;
+  /* Sakriva tekst dok se ne pojavi */
+  animation: appear 2s forwards;
+  /* Koristimo CSS animaciju "appear" koja traje 2 sekunde */
+}
+
+@keyframes appear {
+  from {
+    font-size: 0;
+    /* Početna veličina fonta je 0 */
+  }
+
+  to {
+    font-size: 24px;
+    /* Konačna veličina fonta kada se animacija završi */
+  }
+}
+
+.imageContainer {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+}
+
+
+.cardsContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin: -10% 1% 0;
+  /* Dodajemo margin samo na vrhu da pomaknemo kartice prema gore */
+  z-index: 3;
+  /* Postavljamo z-index na 2 kako bi kartice bile iznad slike */
+
+}
+
+.cardsContainer div {
+  text-align: center;
+}
+
+
+
+.card {
+  opacity: 0;
+  /* Početno stanje: kartica je nevidljiva */
+  transform: translateY(50px);
+  /* Početno stanje: kartica pomerenja prema gore */
+  transition: opacity 0.5s, transform 0.5s;
+  /* Glatka tranzicija */
+}
+
+.appear {
+  opacity: 1 !important;
+  /* Konačno stanje: kartica postaje vidljiva */
+  transform: translateY(0) !important;
+  /* Konačno stanje: kartica ostaje na istoj poziciji */
+}
+
+@media screen and (max-width: 768px) {
+  .cardsContainer {
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    gap: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+
+  }
+
+  .card {
+    opacity: 0;
+    /* Početno stanje: kartica je nevidljiva */
+    transform: translateY(0%);
+    /* Početno stanje: kartica pomerenja prema gore */
+    transition: opacity 0.5s, transform 0.5s;
+    /* Glatka tranzicija */
+  }
+
+  .overlay {
+    height: auto;
+    margin-top:25%;
+  }
+
+  .imageContainer {
+    width: 100%;
+  height: auto;
+
+  }
+
+}

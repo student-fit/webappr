@@ -1,0 +1,45 @@
+.card {
+  width: 350px; /* Možeš prilagoditi širinu kartice po želji */
+  height: auto; /* Visina kartice, možeš prilagoditi */
+  border-radius: 20px; /* Zaobljeni rubovi */
+  overflow: hidden; /* Sakriva sadržaj koji je van granica kartice */
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease; /* Dodajemo prijelaz za glatki efekt */
+}
+
+.card:hover {
+  transform: scale(1.05); /* Povećava karticu za 5% prilikom hovera */
+}
+
+.card-top {
+  flex: 1;
+}
+
+.card-bottom {
+  flex: 1;
+  background-color: #f0f0f0; /* Boja pozadine donjeg dijela kartice */
+  padding: 10px; /* Razmak unutar donjeg dijela kartice */
+}
+
+.card-img {
+  width: 100%;
+  height: auto;
+  max-width: 100%; /* Maksimalna širina slike */
+  border-radius: 20px 20px 0 0; /* Zaobljeni rubovi samo gornjeg dijela */
+}
+
+.card-title {
+  font-size: 1.5em; /* Veliki naslov */
+  margin: 5px 0; /* Razmak između naslova i ostatka sadržaja */
+}
+
+.card-content {
+  font-size: 1em; /* Veličina teksta */
+}
+
+
+@media screen and (max-width: 768px) {
+
+  
+}
