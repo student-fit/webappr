@@ -1,3 +1,73 @@
+/* Resetovanje stilova za listu */
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Stilizacija čitavog menija */
+nav {
+  background-color: #667459;
+  padding: 10px 20px;
+  position: relative;
+}
+
+/* Stilizacija desktop navigacije */
+.desktop-nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.desktop-nav li {
+  margin-left: 20px;
+}
+
+/* Stilizacija padajućeg menija za jezike */
+.language-dropdown {
+  position: absolute;
+  top: 30px;
+  right: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  display: none;
+}
+
+.language-dropdown li {
+  margin-bottom: 5px;
+}
+
+.language-menu:hover .language-dropdown {
+  display: block;
+}
+
+/* Stilizacija linkova i dugmadi */
+.linkic, button {
+  text-decoration: none;
+  color: black;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 5px 10px;
+  border-radius: 20px;
+  transition: background-color 0.3s;
+}
+
+.linkic:hover, button:hover {
+  background-color: #f0f0f0;
+}
+
+/* Stilizacija logotipa */
+.logo img {
+  width: 80px;
+  height: auto;
+}
+
 /* Stilizacija hamburger ikone */
 .menu-icon {
   display: none;
@@ -12,11 +82,11 @@
   display: block;
   width: 25px;
   height: 3px;
-  background: #fff;
+  background: #333;
   margin-bottom: 5px;
 }
 
-/* Prikazivanje mobilnog menija kada je otvoren */
+/* Stilizacija mobilnog menija */
 .menu {
   display: none;
   position: absolute;
@@ -27,12 +97,8 @@
   border-radius: 5px;
 }
 
-.mobile-nav ul {
-  display: none;
-}
-
-.mobile-nav ul.menu {
-  display: block;
+.menu li {
+  margin-bottom: 10px;
 }
 
 /* Media upit za prikazivanje mobilne navigacije */
@@ -40,12 +106,17 @@
   .desktop-nav {
     display: none;
   }
-  
+
   .mobile-nav {
     display: block;
   }
 
   .menu-icon {
+    display: block;
+  }
+
+  /* Prikazivanje menija nakon klikanja na hamburger ikonu */
+  .menu {
     display: block;
   }
 }
