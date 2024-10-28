@@ -1,78 +1,3 @@
-/* Navigation.css */
-
-/* Resetovanje stilova za listu */
-ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-/* Stilizacija čitavog menija */
-nav {
-  background-color: #667459; /* Dodajemo boju pozadine */
-  padding: 10px 20px; /* Dodajemo padding za unutrašnji prostor menija */
-  position: relative; /* Dodajemo relativnu poziciju za relativno pozicioniranje loga */
-}
-
-/* Stilizacija desktop navigacije */
-.desktop-nav {
-  display: flex;
-  justify-content: flex-end; /* Poravnanje menija desno */
-  align-items: center; /* Centriranje vertikalno */
-}
-
-.desktop-nav li {
-  margin-left: 20px;
-}
-
-/* Stilizacija padajućeg menija za jezike */
-.language-dropdown {
-  position: absolute;
-  top: 30px; /* Pomeranje padajućeg menija prema dole */
-  right: 0;
-  background-color: #fff;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  padding: 5px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-  z-index: 1; /* Postavljanje padajućeg menija iznad ostalog sadržaja */
-  display: none; /* Podrazumevano skrivanje menija */
-}
-
-.language-dropdown li {
-  margin-bottom: 5px;
-}
-
-.language-menu:hover .language-dropdown {
-  display: block; /* Prikazivanje padajućeg menija na hover */
-}
-
-/* Stilizacija linkova i dugmadi */
-.linkic, button {
-  text-decoration: none;
-  color: black;
-  border: none;
-  background: none;
-  cursor: pointer;
-  font-size: 16px;
-  padding: 5px 10px;
-  border-radius: 20px;
-  transition: background-color 0.3s;
-}
-
-.linkic:hover, button:hover {
-  background-color: #f0f0f0;
-}
-
-.logo {
-  width: 80px; /* Adjust the width as needed */
-  height: auto; /* Maintain aspect ratio */
-  margin-right: 20px; /* Add margin for spacing */
-  position: absolute; /* Set the logo to absolute position */
-  bottom: 1%; /* Adjust bottom spacing as needed */
-  left: 20px; /* Adjust left spacing as needed */
-}
-
 /* Stilizacija hamburger ikone */
 .menu-icon {
   display: none;
@@ -80,7 +5,7 @@ nav {
   position: absolute;
   top: 10px;
   right: 20px;
-  z-index: 2; /* Postavljanje hamburger ikone iznad ostalog sadržaja */
+  z-index: 2;
 }
 
 .menu-icon span {
@@ -91,38 +16,36 @@ nav {
   margin-bottom: 5px;
 }
 
-/* Stilizacija menija koji se prikazuje nakon klikanja na hamburger ikonu */
+/* Prikazivanje mobilnog menija kada je otvoren */
 .menu {
+  display: none;
   position: absolute;
-  top: 50px; /* Pomeranje menija prema dole */
+  top: 50px;
   right: 20px;
   background: #333;
   padding: 10px;
   border-radius: 5px;
+}
+
+.mobile-nav ul {
   display: none;
 }
 
-.menu li {
-  margin-bottom: 10px;
+.mobile-nav ul.menu {
+  display: block;
 }
 
 /* Media upit za prikazivanje mobilne navigacije */
 @media screen and (max-width: 768px) {
   .desktop-nav {
-      display: none;
+    display: none;
   }
-
+  
   .mobile-nav {
-      display: block;
+    display: block;
   }
 
-  /* Prikazivanje hamburger ikone */
   .menu-icon {
-      display: block;
-  }
-
-  /* Prikazivanje menija nakon klikanja na hamburger ikonu */
-  #menu-toggle:checked + .menu {
-      display: block;
+    display: block;
   }
 }
