@@ -27,7 +27,8 @@ const Footer = () => {
           <div className="levo">
             <h5>CONTACT</h5>
             <p>Medjugorje, BiH</p>
-            <a style="text-decoration: none;" href="mailto:medjugorjetransport@gmail.com">E-mail</a>
+            <a href="mailto:medjugorjetransport@gmail.com">E-mail</a>
+
 
             <p>Phone: +387 63 878 491</p>
 
