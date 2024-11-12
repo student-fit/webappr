@@ -38,6 +38,7 @@ nav {
 
 .language-dropdown li {
   margin-bottom: 5px;
+  color: black;
 }
 
 .language-menu:hover .language-dropdown {
