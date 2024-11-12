@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 import './Navigation.css';
 import Logoo from '../logo.png';
@@ -7,6 +7,7 @@ const Navigation = ({ i18n }) => {
   const { t } = useTranslation();
   const [languageMenuOpen, setLanguageMenuOpen] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const menuRef = useRef(null);
 
   const toggleLanguageMenu = () => {
     setLanguageMenuOpen(!languageMenuOpen);
@@ -15,14 +16,32 @@ const Navigation = ({ i18n }) => {
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
     setLanguageMenuOpen(false);
+    setMobileMenuOpen(false); // Zatvara mobilni meni nakon promene jezika
   };
 
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!mobileMenuOpen);
   };
 
+  // Zatvaranje mobilnog menija kada se klikne van njega
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        setMobileMenuOpen(false);
+        setLanguageMenuOpen(false);
+      }
+    };
+
+    // Dodaj slušalac događaja na ceo dokument
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      // Ukloni slušalac događaja prilikom unmount-a komponente
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
+
   return (
-    <nav>
+    <nav ref={menuRef}>
       {/* Logo */}
       <div className="logo">
         <a href="/">
