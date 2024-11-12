@@ -34,7 +34,6 @@ nav {
   padding: 5px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   z-index: 1;
-  display: none;
 }
 
 .language-dropdown li {
@@ -89,16 +88,37 @@ nav {
 /* Stilizacija mobilnog menija */
 .menu {
   display: none;
-  position: absolute;
-  top: 50px;
-  right: 20px;
+  position: fixed; /* Menija iznad stranice */
+  top: 0;
+  right: 0;
   background: #333;
-  padding: 10px;
+  padding: 20px;
   border-radius: 5px;
+  width: 80%;
+  z-index: 10; /* Veći z-index za prikaz iznad */
+  height: 100%; /* Pokriva celu visinu */
 }
 
+/* Linkovi unutar mobilnog menija */
 .menu li {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+}
+
+.linkic, button {
+  color: #fff; /* Bolja vidljivost linkova na tamnoj pozadini */
+}
+
+/* Padajući meni jezika u mobilnom meniju */
+.language-dropdown {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  z-index: 11; /* Iznad mobilnog menija */
 }
 
 /* Media upit za prikazivanje mobilne navigacije */
